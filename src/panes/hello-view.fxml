@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="mainPanel" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="657.0" prefWidth="1018.0" style="-fx-background-color: b8faff; -fx-background-radius: 20;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MainController">
+    <children>
+        <AnchorPane prefHeight="69.0" prefWidth="1018.0" style="-fx-background-color: #00c7c7; -fx-background-radius: 20;">
+            <children>
+                <Text fill="WHITE" layoutX="14.0" layoutY="51.0" strokeType="OUTSIDE" strokeWidth="0.0" text="GenPassport" wrappingWidth="273.13671875">
+                    <font>
+                        <Font name="Impact" size="39.0" />
+                    </font>
+                </Text>
+                  <Button fx:id="dirUnloadButton" layoutX="771.0" layoutY="18.0" minWidth="38.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="46.0" style="-fx-background-color: #00c7c7;" textFill="WHITE">
+                      <font>
+                          <Font name="Impact" size="14.0" />
+                      </font>
+                      <effect>
+                          <DropShadow />
+                      </effect>
+                  </Button>
+                <Button fx:id="dirLoadButton" layoutX="715.0" layoutY="18.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="46.0" style="-fx-background-color: #00c7c7;" textFill="WHITE">
+                    <font>
+                        <Font name="Impact" size="14.0" />
+                    </font>
+                    <effect>
+                        <DropShadow />
+                    </effect>
+                </Button>
+            <Button fx:id="closeButton" layoutX="939.0" layoutY="18.0" minWidth="38.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="46.0" style="-fx-background-color: #FF6347;" textFill="WHITE">
+               <font>
+                  <Font name="Impact" size="14.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Button>
+            <AnchorPane layoutY="57.0" prefHeight="24.0" prefWidth="1018.0" style="-fx-background-color: #00c7c7;" />
+            <Button fx:id="algsTable" layoutX="883.0" layoutY="18.0" minWidth="38.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="46.0" style="-fx-background-color: #00c7c7;" textFill="WHITE">
+               <font>
+                  <Font name="Impact" size="14.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Button>
+            <Button fx:id="missedGen" layoutX="827.0" layoutY="18.0" minWidth="38.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="46.0" style="-fx-background-color: #00c7c7;" textFill="WHITE">
+               <font>
+                  <Font name="Impact" size="14.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Button>
+            </children>
+        </AnchorPane>
+        <AnchorPane layoutY="82.0" prefHeight="574.0" prefWidth="347.0" style="-fx-background-color: #00949e; -fx-background-radius: 20;">
+            <children>
+            <AnchorPane layoutY="-1.0" prefHeight="74.0" prefWidth="347.0" style="-fx-background-color: #00949e;">
+               <children>
+                      <Text fill="WHITE" layoutX="81.0" layoutY="25.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Выберите необходимый вам шаблон" textAlignment="CENTER" wrappingWidth="181.0">
+                          <font>
+                              <Font name="Impact" size="18.0" />
+                          </font>
+                      </Text>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="325.0" layoutY="547.0" prefHeight="28.0" prefWidth="22.0" style="-fx-background-color: #00949e;" />
+            <AnchorPane layoutX="27.0" layoutY="84.0" prefHeight="479.0" prefWidth="292.0" style="-fx-background-color: b8faff; -fx-background-radius: 20;">
+               <children>
+                  <Label layoutX="21.0" layoutY="18.0" text="Шаблон мужской (новый)" textFill="#00949e">
+                     <font>
+                        <Font name="Impact" size="13.0" />
+                     </font>
+                  </Label>
+                  <ToggleButton fx:id="maleSampleToggle" layoutX="188.0" layoutY="14.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="83.0" style="-fx-background-color: #00c7c7;" text="Выбран" textFill="#00949e">
+                     <font>
+                        <Font name="Impact" size="13.0" />
+                     </font>
+                  </ToggleButton>
+                  <ToggleButton fx:id="femaleOldSampleToggle" layoutX="188.0" layoutY="118.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="83.0" style="-fx-background-color: #00c7c7;" text="Выбран" textFill="#00949e">
+                     <font>
+                        <Font name="Impact" size="13.0" />
+                     </font>
+                  </ToggleButton>
+                  <Label layoutX="21.0" layoutY="120.0" text="Шаблон женский (старый)" textFill="#00949e">
+                     <font>
+                        <Font name="Impact" size="13.0" />
+                     </font>
+                  </Label>
+                  <ToggleButton fx:id="femaleSampleToggle" layoutX="188.0" layoutY="82.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="83.0" style="-fx-background-color: #00c7c7;" text="Выбран" textFill="#00949e">
+                     <font>
+                        <Font name="Impact" size="13.0" />
+                     </font>
+                  </ToggleButton>
+                  <Label layoutX="21.0" layoutY="86.0" text="Шаблон женский (новый)" textFill="#00949e">
+                     <font>
+                        <Font name="Impact" size="13.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="21.0" layoutY="52.0" text="Шаблон мужской (старый)" textFill="#00949e">
+                     <font>
+                        <Font name="Impact" size="13.0" />
+                     </font>
+                  </Label>
+                  <ToggleButton fx:id="maleOldSampleToggle" layoutX="188.0" layoutY="48.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="83.0" style="-fx-background-color: #00c7c7;" text="Выбран" textFill="#00949e">
+                     <font>
+                        <Font name="Impact" size="13.0" />
+                     </font>
+                  </ToggleButton>
+                  <ToggleButton fx:id="maleSampleFLToggle" layoutX="188.0" layoutY="187.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="83.0" style="-fx-background-color: #00c7c7;" text="Выбран" textFill="#00949e">
+                     <font>
+                        <Font name="Impact" size="13.0" />
+                     </font>
+                  </ToggleButton>
+                  <Label layoutX="21.0" layoutY="189.0" text="Шаблон женский (ПЛ)" textFill="#00949e">
+                     <font>
+                        <Font name="Impact" size="13.0" />
+                     </font>
+                  </Label>
+                  <ToggleButton fx:id="femaleSampleFLToggle" layoutX="188.0" layoutY="151.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="83.0" style="-fx-background-color: #00c7c7;" text="Выбран" textFill="#00949e">
+                     <font>
+                        <Font name="Impact" size="13.0" />
+                     </font>
+                  </ToggleButton>
+                  <Label layoutX="21.0" layoutY="155.0" text="Шаблон женский (ПЛ)" textFill="#00949e">
+                     <font>
+                        <Font name="Impact" size="13.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            </children>
+        </AnchorPane>
+        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+        <Text fx:id="loadStatus" fill="WHITE" layoutX="593.0" layoutY="262.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="267.13671875">
+            <font>
+                <Font name="Impact" size="28.0" />
+            </font>
+        </Text>
+        <Button fx:id="startButton" layoutX="623.0" layoutY="290.0" mnemonicParsing="false" prefHeight="52.0" prefWidth="54.0" style="-fx-background-color: #00c7c7;" textFill="WHITE" textOverrun="CLIP">
+            <font>
+                <Font name="Impact" size="28.0" />
+            </font>
+         <effect>
+            <DropShadow />
+         </effect>
+        </Button>
+        <Text fx:id="loadStatus_end" fill="WHITE" layoutX="484.0" layoutY="227.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="460.13671875">
+            <font>
+                <Font name="Impact" size="28.0" />
+            </font>
+        </Text>
+        <Text fx:id="loadStatusFileNumber" fill="WHITE" layoutX="558.0" layoutY="227.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="357.13671875">
+            <font>
+                <Font name="Impact" size="28.0" />
+            </font>
+        </Text>
+      <ButtonBar layoutX="458.0" layoutY="111.0" prefHeight="40.0" prefWidth="200.0" />
+      <Label fx:id="lowLoadText" layoutX="476.0" layoutY="165.0" prefHeight="34.0" prefWidth="453.0" textFill="WHITE">
+         <font>
+            <Font name="Impact" size="28.0" />
+         </font>
+      </Label>
+      <Text fill="#00c7c7" layoutX="968.0" layoutY="639.0" strokeType="OUTSIDE" strokeWidth="0.0" text="V0.5" textAlignment="CENTER" wrappingWidth="35.13671874999994">
+         <font>
+            <Font name="Impact" size="18.0" />
+         </font>
+      </Text>
+    </children>
+</AnchorPane>
